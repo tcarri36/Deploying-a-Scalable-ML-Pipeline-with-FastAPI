@@ -14,7 +14,6 @@ def test_train_model():
     assert isinstance(model, RandomForestClassifier)
 
 
-
 def test_inference():
     """Test that inference returns the expected number of predictions."""
     X = np.array([[1, 2], [2, 3], [3, 4], [4, 5]])
@@ -24,7 +23,6 @@ def test_inference():
     preds = inference(model, X)
 
     assert len(preds) == len(y)
-
 
 
 def test_compute_model_metrics():
